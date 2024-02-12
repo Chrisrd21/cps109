@@ -13,7 +13,7 @@ Upload your file to your GitHub account and send me the link.
 import math
 
 radius = int(input("Enter the radius of the circle: "))
-print(int(radius))
+print(type(radius))
 
 circumfrence = 2 * math.pi * radius
 
