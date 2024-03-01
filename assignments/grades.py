@@ -1,38 +1,39 @@
-grade = int(input('Enter your grade in number form: '))
+number_grade = int(input('Enter your grade in number form: '))
 
 
-if 93 <= grade and grade <= 100:
-    print(f'if your grade is {grade} is a A.')
+if 93 <= number_grade and number_grade <= 100:
+  letter_grade = 'A'
 
-if 90 <= grade and grade <= 92:
-    print(f'if your grade is {grade} is a A-.')
+elif 90 <= number_grade and number_grade <= 92:
+    letter_grade = 'A-'
 
-if 87 <= grade and grade <= 89:
-    print(f'if your grade is {grade} is a B+.')
+elif 87 <= number_grade and number_grade <= 89:
+    letter_grade = 'B+'
 
-if 83 <= grade and grade <= 86:
-    print(f'if your grade is {grade} is a B.')
+elif 83 <= number_grade and number_grade <= 86:
+    letter_grade = 'B'
 
-if 80 <= grade and grade <= 82:
-    print(f'if your grade is {grade} is a B-.')
+elif 80 <= number_grade and number_grade <= 82:
+    letter_grade = 'B-'
 
-if 77 <= grade and grade <= 79:
-    print(f'if your grade is {grade} is a C+.')
+elif 77 <= number_grade and number_grade <= 79:
+    letter_grade = 'C+'
 
-if 73 <= grade and grade <= 76:
-    print(f'if your grade is {grade} is a C.')
+elif 73 <= number_grade and number_grade <= 76:
+    letter_grade = 'C'
 
-if 70 <= grade and grade <= 72:
-    print(f'if your grade is {grade} is a C-.')
+elif 70 <= number_grade and number_grade <= 72:
+    letter_grade = 'C-'
 
-if 67 <= grade and grade <= 69:
-    print(f'if your grade is {grade} is a D+.')
+elif 67 <= number_grade and number_grade <= 69:
+    letter_grade = 'D+'
 
-if 63 <= grade and grade <= 66:
-    print(f'if your grade is {grade} is a D.')
+elif 63 <= number_grade and number_grade <= 66:
+    letter_grade = 'D'
 
-if 60 <= grade and grade <= 62:
-    print(f'if your grade is {grade} is a D-.')
+elif 60 <= number_grade and number_grade <= 62:
+    letter_grade = 'D-'
 
-if grade < 60:
-    print(f'if your grade is {grade} is a F.')
+else:
+    letter_grade = 'F'
+print(f'your letter grade for {number_grade} is {letter_grade}')
