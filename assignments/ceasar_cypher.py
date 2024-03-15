@@ -1,5 +1,6 @@
 plaintext_message = input('Enter a message: ')
 secret_key = int(input('Enter a number from 1-26 for the secret key: '))
+ciphertext = ''
 
 for char in plaintext_message:
     if char.isalpha():
