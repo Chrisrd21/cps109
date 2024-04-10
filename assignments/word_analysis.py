@@ -48,6 +48,21 @@ def total_word_lengths(words):
 def word_values(words):
     return words.values()
 
+def most_common(hist):
+    """Makes a list of word-freq pairs in descending order of frequency.
+
+    hist: map from word to frequency
+
+    returns: list of (frequency, word) pairs
+    """
+    t = []
+    for key, value in hist.items():
+        t.append((value, key))
+
+    t.sort()
+    t.reverse()
+    return t
+
 words = process_file('words.txt')
 no_e_count = no_letter_e(words)
 hist = word_len_hist(words)
@@ -70,6 +85,7 @@ for word in words:
 
 for letter in letter_counts:
     print(letter, letter_counts[letter])
+    print(most_common(hist))
 
 """
 fin = open('words.txt')
